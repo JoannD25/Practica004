@@ -1,4 +1,4 @@
-package com.omilec.apps.androidfunwithflags;
+package com.aperez.apps.androidfunwithflags;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.omilec.apps.eventhandlers.PreferenceChangeListener;
-import com.omilec.apps.lifecyclehelpers.QuizViewModel;
+import com.aperez.apps.eventhandlers.PreferenceChangeListener;
+import com.aperez.apps.lifecyclehelpers.QuizViewModel;
 
 public class MainActivity extends AppCompatActivity {
     public static final String CHOICES = "pref_numberOfChoices";
@@ -25,10 +25,9 @@ public class MainActivity extends AppCompatActivity {
     private OnSharedPreferenceChangeListener preferencesChangeListener;
 
     private void setSharedPreferences() {
-        // set default values in the app's SharedPreferences
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
-        // Register a listener for shared preferences changes
+
         PreferenceManager.getDefaultSharedPreferences(this)
                 .registerOnSharedPreferenceChangeListener(preferencesChangeListener);
     }

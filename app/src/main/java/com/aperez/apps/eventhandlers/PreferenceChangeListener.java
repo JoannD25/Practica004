@@ -1,11 +1,11 @@
-package com.omilec.apps.eventhandlers;
+package com.aperez.apps.eventhandlers;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.widget.Toast;
 
-import com.omilec.apps.androidfunwithflags.MainActivity;
-import com.omilec.apps.androidfunwithflags.R;
+import com.aperez.apps.androidfunwithflags.MainActivity;
+import com.aperez.apps.androidfunwithflags.R;
 
 import java.util.Set;
 

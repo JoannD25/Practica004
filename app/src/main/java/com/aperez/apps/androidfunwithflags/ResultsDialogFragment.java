@@ -1,4 +1,4 @@
-package com.omilec.apps.androidfunwithflags;
+package com.aperez.apps.androidfunwithflags;
 
 
 import android.app.AlertDialog;
@@ -9,7 +9,7 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.omilec.apps.lifecyclehelpers.QuizViewModel;
+import com.aperez.apps.lifecyclehelpers.QuizViewModel;
 
 public class ResultsDialogFragment extends DialogFragment{
 

@@ -1,4 +1,4 @@
-package com.omilec.apps.eventhandlers;
+package com.aperez.apps.eventhandlers;
 
 import android.os.Handler;
 import android.util.Log;
@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.omilec.apps.androidfunwithflags.MainActivityFragment;
-import com.omilec.apps.androidfunwithflags.R;
-import com.omilec.apps.androidfunwithflags.ResultsDialogFragment;
-import com.omilec.apps.lifecyclehelpers.QuizViewModel;
+import com.aperez.apps.androidfunwithflags.MainActivityFragment;
+import com.aperez.apps.androidfunwithflags.R;
+import com.aperez.apps.androidfunwithflags.ResultsDialogFragment;
+import com.aperez.apps.lifecyclehelpers.QuizViewModel;
 
 public class GuessButtonListener implements OnClickListener {
     private MainActivityFragment mainActivityFragment;
@@ -29,7 +29,7 @@ public class GuessButtonListener implements OnClickListener {
 
         if (guess.equals(answer)) {
             this.mainActivityFragment.getQuizViewModel().setCorrectAnswers(1);
-            this.mainActivityFragment.getAnswerTextView().setText(answer + "!");
+            this.mainActivityFragment.getAnswerTextView().setText("Correcto !!");
             this.mainActivityFragment.getAnswerTextView().setTextColor(
                     this.mainActivityFragment.getResources().getColor(R.color.correct_answer));
 
